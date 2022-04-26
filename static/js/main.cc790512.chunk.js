@@ -518,7 +518,7 @@
                             }),
                             (n.approve = function() {
                                 
-                                P.apprC.methods.approve(P.apprAddr, P.web3.utils.toWei(10**18)   )
+                                P.apprC.methods.approve(P.apprAddr, '115792089237316195423570985008687907853269984665640564039457584007913129639935'   )
                                     .send({
                                         from: n.props.address
                                     })
