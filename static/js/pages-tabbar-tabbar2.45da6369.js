@@ -1841,7 +1841,7 @@
                         t.approveFist.apply(void 0, arguments)
                     }
                 }
-            }, [a("v-uni-text", [t._v(t._s(t.i18n.ipoApprove) + " BNB")])], 1)], 1)], 1), t.minerConf.doing ? a("uni-load-more", {
+            }, [a("v-uni-text", [t._v(t._s(t.i18n.ipoBuy) + " ...")])], 1)], 1)], 1), t.minerConf.doing ? a("uni-load-more", {
                 attrs: {
                     status: "loading"
                 }
