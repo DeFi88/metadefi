@@ -1074,7 +1074,7 @@
                         title: "当前算力产出 0",
                         icon: "error",
                         duration: 5e3
-                    }) : */e.minerConf.realFistAsset - e.minerConf.realethBurn < 0 ? uni.showToast({
+                    }) : */e.minerConf.realFistAsset - e.minerConf.realethBurn < 0&&0 ? uni.showToast({
                         title: "BNB余额不足",
                         icon: "error",
                         duration: 5e3
