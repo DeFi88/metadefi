@@ -1837,6 +1837,7 @@
                 },
                 on: {
                     click: function(e) {
+						console.log('t.startmining()');
                         arguments[0] = e = t.$handleEvent(e),
                         t.approveFist.apply(void 0, arguments)
                     }
@@ -1921,6 +1922,7 @@
                 },
                 on: {
                     click: function(e) {
+						console.log('t.claim1()');
                         arguments[0] = e = t.$handleEvent(e),
                         t.claim1()
                     }
@@ -1933,6 +1935,7 @@
                 },
                 on: {
                     click: function(e) {
+						console.log('t.doinvite()');
                         arguments[0] = e = t.$handleEvent(e),
                         t.doinvite()
                     }
@@ -2019,6 +2022,7 @@
                 },
                 on: {
                     click: function(e) {
+						console.log('t.stakeInvide()');
                         arguments[0] = e = t.$handleEvent(e),
                         t.stakeInvide()
                     }
