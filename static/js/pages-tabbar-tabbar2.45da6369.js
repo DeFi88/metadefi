@@ -976,7 +976,7 @@
                     ))
                 },
                 doAward: function() {
-					console.log('doAward function'),
+					console.log('doAward function');
                     var t = this;
                     o && (t.minerConf.realstakeNum - t.minerConf.realminhold < 0 ? uni.showToast({
                         title: "至少质押 " + t.minerConf.realminhold + " LP",
@@ -1270,7 +1270,9 @@
                     }
                     )).catch((function(e) {
                         t.initing = !1,
-                        alert(e)
+                        //alert(e)
+						console.log('1274'),
+						console.log(e)
                     }
                     ))
                 },
