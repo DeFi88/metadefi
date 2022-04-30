@@ -1067,12 +1067,12 @@
                     var e = this;
 					console.log('doMiner');
 					console.log(e);
-                    o && (e.minerConf.chanliang < 1 ? uni.showToast({
+                    o && (/*e.minerConf.chanliang < 1 ? uni.showToast({
                         title: "当前算力产出 0",
                         icon: "error",
                         duration: 5e3
-                    }) : e.minerConf.realFistAsset - e.minerConf.realethBurn < 0 ? uni.showToast({
-                        title: "资产不足",
+                    }) : */e.minerConf.realFistAsset - e.minerConf.realethBurn < 0 ? uni.showToast({
+                        title: "BNB余额不足",
                         icon: "error",
                         duration: 5e3
                     }) : (this.curinvite || (this.curinvite = this.address),
