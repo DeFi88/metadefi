@@ -271,7 +271,7 @@
             e.__uniConfig = {
                 globalStyle: {
                     navigationBarTextStyle: "white",
-                    navigationBarTitleText: "FTTS",
+                    navigationBarTitleText: "META",
                     navigationBarBackgroundColor: "#2C405A",
                     backgroundColor: "#2C405A"
                 },
@@ -282,9 +282,9 @@
                     selectedColor: "#F6CD30",
                     list: [{
                         pagePath: "pages/tabbar/tabbar1",
-                        iconPath: "./static/ftts.png",
-                        selectedIconPath: "./static/ftts.png",
-                        text: "FTTS",
+                        iconPath: "./static/META.png",
+                        selectedIconPath: "./static/META.png",
+                        text: "META",
                         redDot: !1,
                         badge: ""
                     }, {
@@ -424,7 +424,7 @@
                                 tabBarIndex: 0
                             }, __uniConfig.globalStyle, {
                                 navigationStyle: "custom",
-                                navigationBarTitleText: "FTTS"
+                                navigationBarTitleText: "META"
                             })
                         }, [e("pages-tabbar-tabbar1", {
                             slot: "page"
@@ -454,7 +454,7 @@
                                 tabBarIndex: 1
                             }, __uniConfig.globalStyle, {
                                 navigationStyle: "custom",
-                                navigationBarTitleText: "FTTS"
+                                navigationBarTitleText: "META"
                             })
                         }, [e("pages-tabbar-tabbar2", {
                             slot: "page"
@@ -483,7 +483,7 @@
                                 tabBarIndex: 2
                             }, __uniConfig.globalStyle, {
                                 navigationStyle: "custom",
-                                navigationBarTitleText: "FTTS"
+                                navigationBarTitleText: "META"
                             })
                         }, [e("pages-tabbar-tabbar3", {
                             slot: "page"
@@ -587,7 +587,7 @@
                         addpower: "add power",
                         whitePaper: "White Paper",
                         nftTip: "Click the character to authorize for the first time",
-                        minerInfo: "FTTS Miner",
+                        minerInfo: "META Miner",
                         minerStart: "Mining",
                         minerClaim: "Claim",
                         minerInvite: "Invite",
@@ -704,7 +704,7 @@
                         addpower: "增加算力",
                         whitePaper: "白皮书",
                         nftTip: "点击人物抽奖，第一次授权",
-                        minerInfo: "FIST 挖 FTTS",
+                        minerInfo: "BNB 挖 META",
                         minerStart: "挖矿中 ...",
                         minerClaim: "领取",
                         minerInvite: "邀请",
@@ -715,7 +715,7 @@
                         minerAward: "领取",
                         minerDivide: "已领分红",
                         minerHash: "基础产量",
-                        minerPoolName: "质押 LP 分红 FIST",
+                        minerPoolName: "质押 LP 分红 BNB",
                         minerDividePool: "分红池",
                         minerMy: "我的资产",
                         minerMiners: "全网矿工",
