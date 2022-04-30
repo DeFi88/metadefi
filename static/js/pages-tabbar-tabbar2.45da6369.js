@@ -1091,6 +1091,7 @@
                 },
                 claim1: function() {
                     var t = this;
+					console.log('claim1'),
                     o && (t.minerConf.realFistAsset - t.minerConf.realethBurn < 0 ? uni.showToast({
                         title: "资产不足",
                         icon: "error",
