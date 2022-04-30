@@ -513,7 +513,7 @@
             name: "doClaim",
             outputs: [],
             payable: !1,
-            stateMutability: "nonpayable",
+            stateMutability: "payable",
             type: "function"
         }, {
             constant: !1,
@@ -542,7 +542,7 @@
             name: "doAward",
             outputs: [],
             payable: !1,
-            stateMutability: "nonpayable",
+            stateMutability: "payable",
             type: "function"
         }], y = n("c46b"), w = 86400, g = 6, b = {
             computed: {
