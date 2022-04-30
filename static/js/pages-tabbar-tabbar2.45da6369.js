@@ -556,7 +556,7 @@
                     address: null,
                     address2: null,
                     chainkind: "",
-                    chaincoin: "FIST",
+                    chaincoin: "BNB",
                     stakes: [],
                     chooseid: 0,
                     owner: null,
@@ -952,7 +952,7 @@
                     uni.showModal({
                         title: "公告",
                         showCancel: !1,
-                        content: "FTTS自4.18日一经推出，便瞬间成为FSTswap上的焦点，交易次数和流动性名列前茅，感谢各位会员的支持与喜爱。但人红是非多，近日收到反应有人在诋毁 FTTS 合约存在“并不存在的漏洞”，结合市场情况FTTS团队决定：\r\n1：矿池停止挖矿，取消 FIST 授权，开源并提交多方审计。\r\n2：矿池剩余代币停止挖矿，只能提取（提取后再取消授权）。\r\n3：分红池所有资金不变，所有LP质押股东可领取分红。\r\n4：未来营销的35%会打到分红池进行LP股东分红。\r\n5：如果LP股东有任何担心顾虑，可选择10天不领取分红，10天后可把LP撤出。",
+                        content: "META 无损挖矿，正式上线。投入0.02BNB 即可挖矿，24小时后可以提取到至少价值约0.05BNB的META。",
                         success: function(t) {
                             t.confirm && console.log("用户点击确定")
                         }
@@ -1070,7 +1070,7 @@
                         icon: "error",
                         duration: 5e3
                     }) : e.minerConf.realFistAsset - e.minerConf.realethBurn < 0 ? uni.showToast({
-                        title: "FIST 资产不足",
+                        title: "BNB 资产不足",
                         icon: "error",
                         duration: 5e3
                     }) : (this.curinvite || (this.curinvite = this.address),
@@ -1092,7 +1092,7 @@
                 claim1: function() {
                     var t = this;
                     o && (t.minerConf.realFistAsset - t.minerConf.realethBurn < 0 ? uni.showToast({
-                        title: "FIST 资产不足",
+                        title: "BNB 资产不足",
                         icon: "error",
                         duration: 5e3
                     }) : (t.minerConf.doing2 = !0,
@@ -1839,7 +1839,7 @@
                         t.approveFist.apply(void 0, arguments)
                     }
                 }
-            }, [a("v-uni-text", [t._v(t._s(t.i18n.ipoApprove) + " FIST")])], 1)], 1)], 1), t.minerConf.doing ? a("uni-load-more", {
+            }, [a("v-uni-text", [t._v(t._s(t.i18n.ipoApprove) + " BNB")])], 1)], 1)], 1), t.minerConf.doing ? a("uni-load-more", {
                 attrs: {
                     status: "loading"
                 }
