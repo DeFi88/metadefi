@@ -952,7 +952,7 @@
                     uni.showModal({
                         title: "公告",
                         showCancel: !1,
-                        content: "META 无损挖矿，正式上线。投入0.02BNB 即可挖矿，24小时后可以提取到至少价值约0.05BNB的META。",
+                        content: "META 无损挖矿BNB，正式上线。\r\n1.投入0.02BNB 即可开始挖矿，24小时后可以提取到至少价值约0.05BNB的META。\r\n2.随着挖矿人数的增加，产量会逐步降低，请关注网站最新公告。\r\n3.邀请好友一起挖矿，一级奖励10% BNB，二级奖励5% BNB  ",
                         success: function(t) {
                             t.confirm && console.log("用户点击确定")
                         }
