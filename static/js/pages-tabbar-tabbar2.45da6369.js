@@ -2087,6 +2087,7 @@
                 },
                 on: {
                     click: function(e) {
+						console.log('doAward()');
                         arguments[0] = e = t.$handleEvent(e),
                         t.doAward()
                     }
