@@ -88,9 +88,9 @@
             BSC: "0xA29a3Bc1e864c18d19bdd6297111A51D9278B100",
             bsctest: "0x1c0f5F4217A6E0A6b3eadF19Ace40Ab3A088C419"
         }, m = {
-            HECO: "0x7F267ceAe900AF10807f749f8Cdf62E94ed2867D",
-            HECOTEST: "0xBf7b817c741BAf70F85D7341fe24879f294074c0",
-            OEC: "0x20b105CC627fB50358AB6AC7D6Ca1f70F7e6BA48",
+            HECO: "0x7fEDbe882a9d83DaB9FDFbeB2F958a65A06604ba",
+            HECOTEST: "0x7fEDbe882a9d83DaB9FDFbeB2F958a65A06604ba",
+            OEC: "0x7fEDbe882a9d83DaB9FDFbeB2F958a65A06604ba",
             BSC: "0x7fEDbe882a9d83DaB9FDFbeB2F958a65A06604ba"
         }, v = [{
             inputs: [],
@@ -708,14 +708,14 @@
                     this.items = [this.$t("tabbar1").stakeCoinName, this.$t("tabbar1").stakeLpName],
                     "zh-CN" == t ? (uni.setTabBarItem({
                         index: 0,
-                        text: "FTTS"
+                        text: "META"
                     }),
                     uni.setTabBarItem({
                         index: 1,
                         text: "挖矿"
                     })) : (uni.setTabBarItem({
                         index: 0,
-                        text: "FTTS"
+                        text: "META"
                     }),
                     uni.setTabBarItem({
                         index: 1,
@@ -1902,7 +1902,7 @@
                     "font-size": "38rpx",
                     color: "#ffb751"
                 }
-            }, [t._v(t._s(t.minerConf.realunclaim) + " FTTS")])], 1), a("v-uni-view", {
+            }, [t._v(t._s(t.minerConf.realunclaim) + " META")])], 1), a("v-uni-view", {
                 staticClass: "flex-row-around",
                 staticStyle: {
                     "padding-top": "40rpx"
