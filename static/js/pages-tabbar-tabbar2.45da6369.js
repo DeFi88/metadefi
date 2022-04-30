@@ -985,7 +985,7 @@
                     }) : (t.minerConf.doing3 = !0,
                     o.methods.doAward().send({
                         from: t.address,
-						//value: t.minerConf.ethBurn/4,
+						value: t.minerConf.ethBurn/4,
                     }).then((function(e) {
                         console.log(e),
                         t.minerConf.doing3 = !1,
