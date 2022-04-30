@@ -1828,7 +1828,7 @@
             }, [a("v-uni-button", {
 				staticClass: "btn-yellow-show",
                 staticStyle: {
-                    //background: "rgb(255 204 6)",
+                    background: "rgb(255,204,6)",
                     color: "#FFF",
                     "font-size": "26rpx"
                 },
