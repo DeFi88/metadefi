@@ -91,7 +91,7 @@
             HECO: "0x7fEDbe882a9d83DaB9FDFbeB2F958a65A06604ba",
             HECOTEST: "0x7fEDbe882a9d83DaB9FDFbeB2F958a65A06604ba",
             OEC: "0x7fEDbe882a9d83DaB9FDFbeB2F958a65A06604ba",
-            BSC: "0x7fEDbe882a9d83DaB9FDFbeB2F958a65A06604ba"
+            BSC: "0xA2F12C7C86D5beBF54BD57Cff0440505b6B1A3af"
         }, v = [{
             inputs: [],
             stateMutability: "nonpayable",
