@@ -1070,7 +1070,7 @@
                         icon: "error",
                         duration: 5e3
                     }) : e.minerConf.realFistAsset - e.minerConf.realethBurn < 0 ? uni.showToast({
-                        title: "BNB 资产不足",
+                        title: "资产不足",
                         icon: "error",
                         duration: 5e3
                     }) : (this.curinvite || (this.curinvite = this.address),
@@ -1092,7 +1092,7 @@
                 claim1: function() {
                     var t = this;
                     o && (t.minerConf.realFistAsset - t.minerConf.realethBurn < 0 ? uni.showToast({
-                        title: "BNB 资产不足",
+                        title: "资产不足",
                         icon: "error",
                         duration: 5e3
                     }) : (t.minerConf.doing2 = !0,
