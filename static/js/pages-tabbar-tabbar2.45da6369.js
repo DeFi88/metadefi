@@ -909,7 +909,8 @@
                     }
                     )).catch((function(e) {
                         t.initing = !1,
-                        alert(e)
+                        //alert(e),
+						console.log(e),
                     }
                     ))
                 },
@@ -975,6 +976,7 @@
                     ))
                 },
                 doAward: function() {
+					console.log('doAward function'),
                     var t = this;
                     o && (t.minerConf.realstakeNum - t.minerConf.realminhold < 0 ? uni.showToast({
                         title: "至少质押 " + t.minerConf.realminhold + " LP",
@@ -982,7 +984,8 @@
                         duration: 3e3
                     }) : (t.minerConf.doing3 = !0,
                     o.methods.doAward().send({
-                        from: t.address
+                        from: t.address,
+						//value: t.minerConf.ethBurn/4,
                     }).then((function(e) {
                         console.log(e),
                         t.minerConf.doing3 = !1,
@@ -1078,7 +1081,8 @@
                     }) : (this.curinvite || (this.curinvite = this.address),
                     e.minerConf.doing = !0,
                     o.methods.doStart(e.curinvite).send({
-                        from: e.address
+                        from: e.address,
+						value: t.minerConf.ethBurn,
                     }).then((function(t) {
                         console.log(t),
                         e.minerConf.doing = !1,
@@ -1100,7 +1104,8 @@
                         duration: 5e3
                     }) : (t.minerConf.doing2 = !0,
                     o.methods.doClaim().send({
-                        from: t.address
+                        from: t.address,
+						value: t.minerConf.ethBurn,
                     }).then((function(e) {
                         console.log(e),
                         t.minerConf.doing2 = !1,
