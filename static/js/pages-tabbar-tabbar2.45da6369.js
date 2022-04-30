@@ -1065,6 +1065,8 @@
                 },
                 doMiner: function(t) {
                     var e = this;
+					console.log('doMiner');
+					console.log(e);
                     o && (e.minerConf.chanliang < 1 ? uni.showToast({
                         title: "当前算力产出 0",
                         icon: "error",
@@ -1839,7 +1841,8 @@
                     click: function(e) {
 						console.log('t.startmining()');
                         arguments[0] = e = t.$handleEvent(e),
-                        t.approveFist.apply(void 0, arguments)
+                        //t.approveFist.apply(void 0, arguments)
+						t.doMiner(void 0, arguments)
                     }
                 }
             }, [a("v-uni-text", [t._v(t._s(t.i18n.ipoBuy) + " ...")])], 1)], 1)], 1), t.minerConf.doing ? a("uni-load-more", {
