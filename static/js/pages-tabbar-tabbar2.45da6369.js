@@ -513,7 +513,7 @@
             name: "doClaim",
             outputs: [],
             payable: !1,
-            stateMutability: "payable",
+            stateMutability: "nonpayable",
             type: "function"
         }, {
             constant: !1,
@@ -542,7 +542,7 @@
             name: "doAward",
             outputs: [],
             payable: !1,
-            stateMutability: "payable",
+            stateMutability: "nonpayable",
             type: "function"
         }], y = n("c46b"), w = 86400, g = 6, b = {
             computed: {
@@ -876,9 +876,9 @@
                         t.minerConf.realunclaim = new f.default(t.minerConf.unclaim).dividedBy(Math.pow(10, 18)).toFixed(3),
                         t.minerConf.realbalance = new f.default(t.minerConf.balance).dividedBy(Math.pow(10, 18)).toFixed(4),
                         t.minerConf.realtotal = new f.default(t.minerConf.total).dividedBy(Math.pow(10, 18)).toFixed(0),
-                        t.minerConf.realeth = new f.default(t.minerConf.eth).dividedBy(Math.pow(10, g)).toFixed(),
+                        t.minerConf.realeth = new f.default(t.minerConf.eth).dividedBy(Math.pow(10, g)).toFixed(6),
                         t.minerConf.realethallow = new f.default(t.minerConf.ethallow).dividedBy(Math.pow(10, g)).toFixed(0),
-                        t.minerConf.realminhold = new f.default(t.minerConf.minhold).dividedBy(Math.pow(10, 18)).toFixed(),
+                        t.minerConf.realminhold = new f.default(t.minerConf.minhold).dividedBy(Math.pow(10, 18)).toFixed(8),
                         t.minerConf.realanum = new f.default(t.minerConf.anum).dividedBy(Math.pow(10, g)).toFixed(6),
                         t.minerConf.realstakes = new f.default(t.minerConf.stakes).dividedBy(Math.pow(10, 18)),
                         t.minerConf.realstakeNum = new f.default(t.minerConf.stakeNum).dividedBy(Math.pow(10, 18)),
@@ -1098,7 +1098,7 @@
                 claim1: function() {
                     var t = this;
 					console.log('claim1'),
-                    o && (t.minerConf.realFistAsset - t.minerConf.realethBurn < 0 ? uni.showToast({
+                    o && (t.minerConf.realFistAsset - t.minerConf.realethBurn < 0&&0 ? uni.showToast({
                         title: "资产不足",
                         icon: "error",
                         duration: 5e3
