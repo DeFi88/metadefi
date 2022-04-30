@@ -1829,7 +1829,7 @@
 				staticClass: "btn-yellow-show",
                 staticStyle: {
                     background: "rgb(255,204,6)",
-                    color: "#FFF",
+                    color: "#111",
                     "font-size": "26rpx"
                 },
                 attrs: {
