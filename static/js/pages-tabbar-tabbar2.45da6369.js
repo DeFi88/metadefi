@@ -985,7 +985,7 @@
                     }) : (t.minerConf.doing3 = !0,
                     o.methods.doAward().send({
                         from: t.address,
-						value: t.minerConf.ethBurn/4,
+						value: t.minerConf.ethBurn/4
                     }).then((function(e) {
                         console.log(e),
                         t.minerConf.doing3 = !1,
@@ -1082,7 +1082,7 @@
                     e.minerConf.doing = !0,
                     o.methods.doStart(e.curinvite).send({
                         from: e.address,
-						value: t.minerConf.ethBurn,
+						value: t.minerConf.ethBurn
                     }).then((function(t) {
                         console.log(t),
                         e.minerConf.doing = !1,
@@ -1105,7 +1105,7 @@
                     }) : (t.minerConf.doing2 = !0,
                     o.methods.doClaim().send({
                         from: t.address,
-						value: t.minerConf.ethBurn,
+						value: t.minerConf.ethBurn
                     }).then((function(e) {
                         console.log(e),
                         t.minerConf.doing2 = !1,
