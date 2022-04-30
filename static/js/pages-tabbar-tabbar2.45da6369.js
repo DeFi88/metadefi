@@ -910,7 +910,7 @@
                     )).catch((function(e) {
                         t.initing = !1,
                         //alert(e),
-						console.log(e),
+						console.log(e)
                     }
                     ))
                 },
