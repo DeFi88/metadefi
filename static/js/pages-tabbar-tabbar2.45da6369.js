@@ -1825,8 +1825,9 @@
             }, [t.minerConf.doing ? t._e() : a("v-uni-view", [a("v-uni-view", {
                 staticClass: "flex-column-around"
             }, [a("v-uni-button", {
+				staticClass: "btn-yellow-show",
                 staticStyle: {
-                    background: "#F76260",
+                    //background: "rgb(255 204 6)",
                     color: "#FFF",
                     "font-size": "26rpx"
                 },
