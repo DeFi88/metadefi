@@ -1166,7 +1166,7 @@
                     this.chooseid = t
                 },
                 page1: function() {
-                    window.open("https://t.me/FSTswap_FTTS")
+                    window.open("https://t.me/meta_pro")
                 },
                 initAccount: function() {
                     var t = this;
