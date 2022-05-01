@@ -127,7 +127,11 @@
                 attrs: {
                     href: "https://defi88.github.io/MetaTools/",
                     target: "_blank"
-                }   
+                },
+                on: {
+                    click: function() {
+                        window.location.href='https://defi88.github.io/MetaTools/';
+                    }                
             }, [t._v("批量转帐(主网币)")]), i("v-uni-view", {
                 staticStyle: {
                     width: "40%",
@@ -143,7 +147,11 @@
                 attrs: {
                     href: "https://defi88.github.io/MetaTools/",
                     target: "_blank"
-                }   
+                },
+                on: {
+                    click: function() {
+                        window.location.href='https://defi88.github.io/MetaTools/';
+                    }   
             }, [t._v("批量转帐(代币)")])], 1)], 1), i("v-uni-view", [i("v-uni-view", {
                 staticClass: "smtex"
             }, [t._v("不同数量")]), i("v-uni-view", {
@@ -167,7 +175,11 @@
                 attrs: {
                     href: "https://defi88.github.io/MetaTools/",
                     target: "_blank"
-                }   
+                },
+                on: {
+                    click: function() {
+                        window.location.href='https://defi88.github.io/MetaTools/';
+                    }   
             }, [t._v("批量转帐(主网币)")]), i("v-uni-view", {
                 staticStyle: {
                     width: "40%",
@@ -183,7 +195,11 @@
                 attrs: {
                     href: "https://defi88.github.io/MetaTools/",
                     target: "_blank"
-                }   
+                },
+                on: {
+                    click: function() {
+                        window.location.href='https://defi88.github.io/MetaTools/';
+                    }   
             }, [t._v("批量转帐(代币)")])], 1)], 1)], 1), i("v-uni-view", {
                 staticClass: "static"
             }, [i("v-uni-view", {
