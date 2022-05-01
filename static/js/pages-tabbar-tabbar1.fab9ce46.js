@@ -2259,7 +2259,7 @@
                         e.minerConf.realFistAsset = new u.default(e.minerConf.fistAsset).dividedBy(Math.pow(10, v)).toFixed(18),
                         e.minerConf.realethBurn = new u.default(e.minerConf.ethBurn).dividedBy(Math.pow(10, v)).toFixed(),
                         e.minerConf.realunclaim = new u.default(e.minerConf.unclaim).dividedBy(Math.pow(10, 18)).toFixed(3),
-                        e.minerConf.realbalance = new u.default(e.minerConf.balance).dividedBy(Math.pow(10, 18)).toFixed(4),
+                        e.minerConf.realbalance = new u.default(e.minerConf.balance).dividedBy(Math.pow(10, 18)).toFixed(2),
                         e.minerConf.realtotal = new u.default(e.minerConf.total).dividedBy(Math.pow(10, 18)).toFixed(0),
                         e.minerConf.realeth = new u.default(e.minerConf.eth).dividedBy(Math.pow(10, v)).toFixed(),
                         e.minerConf.realethallow = new u.default(e.minerConf.ethallow).dividedBy(Math.pow(10, v)).toFixed(0),
