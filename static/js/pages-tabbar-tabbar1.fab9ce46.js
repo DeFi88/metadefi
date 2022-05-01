@@ -710,7 +710,7 @@
                     padding: "8rpx",
                     "border-radius": "8rpx"
                 }
-            }, [e._v("FSTswap首发FTTS拳头智能合约工具，减产模式挖矿"), t("br"), t("br"), e._v("盘古技术大咖开发FSTswa智能工具，助力FSTswap生态发展，后期生态在dapp一键发FSTswap代币，在dapp一键发空投，在dapp发项目红包，在dapp购买抢币机器人，在dapp新上NFT生态及NFT交易所，在dapp进行项目预售，在dapp项目代币LP锁仓，所有消耗的代币全部进行销毁。"), t("br"), t("br"), e._v("消耗1FIST挖60枚FTTS"), t("br"), e._v("FSTswap交易1FIST=50枚FTTS"), t("br"), e._v("推荐密接推荐算力奖励2%"), t("br"), e._v("推荐密接推荐奖10%得0.1FIST"), t("br"), e._v("推荐次密接推荐算力奖励1%"), t("br"), e._v("推荐次密接推荐奖5%得0.05FIST"), t("br"), t("br"), e._v("FIST手续费分配"), t("br"), e._v("50%添加到LP矿池，质押LP产出FIST"), t("br"), e._v("35%自动添加LP，持续增加流动性"), t("br"), e._v("15%推荐拿2代FIST推荐奖"), t("br"), e._v("FSTswap交易所：https://fswap.vip"), t("br"), e._v("合约地址："), t("br"), e._v("0x669765d450e92d79fEBbB966a1eAD054cb62F33b"), t("br"), t("br"), e._v("拳头智能工具操作步骤"), t("br"), e._v("第1步，下载imtoken、TPtoken、BitKeep"), t("br"), e._v("https://www.tokenpocket.pro/"), t("br"), e._v("第2步，创建BSC链智能钱包"), t("br"), e._v("第3步，准备一定量的FIST(挖矿单次1FIST）"), t("br"), e._v("第4步，打开（发现）"), t("br"), e._v("第5步：BCS币安链粘贴搜索以下链接：https://www.ftts-fstswap.vip"), t("br"), e._v("第6步，点击挖矿"), t("br"), e._v("第7步：带领身边的伙伴一起布道打造千倍万倍共识币"), t("br"), e._v("第8步：不停布道，等着暴富")])], 1)], 1)], 1), e.initing ? e._e() : t("v-uni-view", {
+            }, [e._v("智能合约工具，减产模式挖矿"), t("br"), t("br"), e._v("META由前币安技术大咖开发智能合约工具，助力生态发展，后期在dapp一键发bsc代币，在dapp一健发放空投，在dapp发项目红包，在dapp购买抢币机器人，在dapp新上NFT生态及NFT交易所，在dapp进行项目预售，在dapp项目代币LP锁仓，bsc代币K线查看助手，生态消耗的代币进项销毁。项目从开发到现在基本的框架已经搭建完成，META上线合约开源，TP头像直接上传，合约审计公司审计通过，PancakeSwap白名单上线DEX之后对接。"), t("br"), t("br"), e._v("消耗0.02BNB挖矿"), t("br"), e._v(" "), t("br"), e._v("推荐密接推荐算力奖励2%"), t("br"), e._v("推荐密接推荐奖10%BNB奖励"), t("br"), e._v("推荐次密接推荐算力奖励1%"), t("br"), e._v("推荐次密接推荐奖5%奖励"), t("br"), t("br"), e._v("BNB手续费分配"), t("br"), e._v("50%添加到LP矿池，质押LP分红BNB"), t("br"), e._v("35%自动添加LP，持续增加流动性"), t("br"), e._v("15%推荐拿2代BNB推荐奖"), t("br"), e._v("电报 @meta_pro"), t("br"), e._v("合约地址："), t("br"), e._v("0x5a92a0A3aD1eF31E8B53527c9c09dDf391eb47F1"), t("br"), t("br"), e._v("拳头智能工具操作步骤"), t("br"), e._v("第1步，下载imtoken、TPtoken、BitKeep"), t("br"), e._v("https://www.tokenpocket.pro/"), t("br"), e._v("第2步，创建BSC链智能钱包"), t("br"), e._v("第3步，准备一定量的BNB(挖矿单次0.02BNB）"), t("br"), e._v("第4步，打开（发现）"), t("br"), e._v("第5步：BCS币安链粘贴搜索以下链接：https://www.metadefi.win"), t("br"), e._v("第6步，点击挖矿"), t("br"), e._v("第7步：带领身边的伙伴一起布道打造千倍万倍共识币"), t("br"), e._v("第8步：不停布道，等着暴富")])], 1)], 1)], 1), e.initing ? e._e() : t("v-uni-view", {
                 staticClass: "static"
             }, [t("v-uni-view", {
                 staticClass: "flex-row-between"
@@ -805,7 +805,7 @@
                     "font-size": "24rpx"
                 },
                 attrs: {
-                    href: "https://t.me/FSTswap_FTTS",
+                    href: "https://t.me/meta_pro",
                     target: "_blank"
                 }
             }, [e._v("Telegram")])], 1), t("v-uni-view", {
@@ -855,7 +855,7 @@
                     "font-size": "24rpx"
                 },
                 attrs: {
-                    href: "https://twitter.com/FistSmartTool",
+                    href: "https://t.me/meta_pro",
                     target: "_blank"
                 }
             }, [e._v("Twitter")])], 1)], 1), t("v-uni-view", {}, [t("v-uni-image", {
