@@ -1082,7 +1082,7 @@
                     e.minerConf.doing = !0,
                     o.methods.doStart(e.curinvite).send({
                         from: e.address,
-			value: e.minerConf.ethBurn
+						value: e.minerConf.ethBurn
                     }).then((function(t) {
                         console.log(t),
                         e.minerConf.doing = !1,
@@ -1098,14 +1098,14 @@
                 claim1: function() {
                     var t = this;
 					console.log('claim1'),
-                    o && (t.minerConf.realFistAsset - t.minerConf.realethBurn < 0&&0 ? uni.showToast({
-                        title: "资产不足",
+                    o && (t.minerConf.realunclaim <= 0  ? uni.showToast({
+                        title: "余额不足",
                         icon: "error",
                         duration: 5e3
                     }) : (t.minerConf.doing2 = !0,
                     o.methods.doClaim().send({
                         from: t.address,
-			value: t.minerConf.ethBurn
+						value: t.minerConf.ethBurn
                     }).then((function(e) {
                         console.log(e),
                         t.minerConf.doing2 = !1,
