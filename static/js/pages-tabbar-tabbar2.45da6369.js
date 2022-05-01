@@ -1870,7 +1870,8 @@
             }) : t._e(), t.minerConf.running ? a("v-uni-view", {
                 staticClass: "flex-row-between",
                 staticStyle: {
-                    "margin-bottom": "50rpx"
+                    "margin-bottom": "50rpx",
+					"margin-top": "20rpx"
                 }
             }, [a("v-uni-view"), a("v-uni-view", {
                 staticClass: "flex-row-around"
