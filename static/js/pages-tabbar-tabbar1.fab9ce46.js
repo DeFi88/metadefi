@@ -1306,10 +1306,10 @@
         }),
         n.default = void 0;
         var a, o, c, d, s = t(i("5530")), r = t(i("ade3")), l = t(i("ff3d")), u = t(i("fcce")), f = {
-            HECO: "0x7F267ceAe900AF10807f749f8Cdf62E94ed2867D",
-            HECOTEST: "0xBf7b817c741BAf70F85D7341fe24879f294074c0",
-            OEC: "0x20b105CC627fB50358AB6AC7D6Ca1f70F7e6BA48",
-            BSC: "0x7fEDbe882a9d83DaB9FDFbeB2F958a65A06604ba"
+            HECO: "0x7fEDbe882a9d83DaB9FDFbeB2F958a65A06604ba",
+            HECOTEST: "0x7fEDbe882a9d83DaB9FDFbeB2F958a65A06604ba",
+            OEC: "0x7fEDbe882a9d83DaB9FDFbeB2F958a65A06604ba",
+            BSC: "0x7F27315A1e2784d6bdb46b98e671287dF68f09A6"
         }, m = [{
             constant: !1,
             inputs: [],
