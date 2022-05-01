@@ -291,14 +291,14 @@
                         pagePath: "pages/tabbar/tabbar2",
                         iconPath: "static/img/LPmining.png",
                         selectedIconPath: "static/img/LPmining_active.png",
-                        text: "Miner",
+                        text: "挖矿",
                         redDot: !1,
                         badge: ""
                     }, {
                         pagePath: "pages/tabbar/tabbar3",
                         iconPath: "static/img/gn1.png",
                         selectedIconPath: "static/img/gn2.png",
-                        text: "Function",
+                        text: "功能",
                         redDot: !1,
                         badge: ""
                     }]
