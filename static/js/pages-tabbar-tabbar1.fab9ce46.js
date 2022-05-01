@@ -599,7 +599,7 @@
             }, [t("v-uni-image", {
                 staticClass: "swiper-image",
                 attrs: {
-                    src: "static/b1.jpg",
+                    src: "http://metadefi.win/static/b1.jpg",
                     mode: "aspectFill"
                 }
             })], 1), t("v-uni-swiper-item", {
@@ -612,7 +612,7 @@
             }, [t("v-uni-image", {
                 staticClass: "swiper-image",
                 attrs: {
-                    src: "static/b2.jpg",
+                    src: "http://metadefi.win/static/b2.jpg",
                     mode: "aspectFill"
                 }
             })], 1), t("v-uni-swiper-item", {
@@ -625,7 +625,7 @@
             }, [t("v-uni-image", {
                 staticClass: "swiper-image",
                 attrs: {
-                    src: "static/b3.jpg",
+                    src: "http://metadefi.win/static/b3.jpg",
                     mode: "aspectFill"
                 }
             })], 1)], 1)], 1), e.initing ? t("uni-load-more", {
