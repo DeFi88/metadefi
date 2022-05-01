@@ -104,7 +104,7 @@
                 staticClass: "static"
             }, [i("v-uni-view", {
                 staticClass: "tex"
-            }, [t._v("按需计费")]), i("hr"), i("v-uni-view", [i("v-uni-view", {
+            }, [t._v("限时免费")]), i("hr"), i("v-uni-view", [i("v-uni-view", {
                 staticClass: "smtex"
             }, [t._v("相同数量")]), i("v-uni-view", {
                 staticStyle: {
