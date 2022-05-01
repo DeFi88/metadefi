@@ -1069,6 +1069,17 @@
                 doMiner: function(t) {
                     var e = this;
 					console.log('doMiner');
+					if(e.minerConf.running){
+					
+					uni.showToast({
+											title: "正在挖矿中",
+											icon: "error",
+											duration: 5e3
+										})	
+
+						return ;							
+						
+					}
 					console.log(e);
                     o && (/*e.minerConf.chanliang < 1 ? uni.showToast({
                         title: "当前算力产出 0",
