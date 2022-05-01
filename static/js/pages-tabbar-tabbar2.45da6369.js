@@ -2204,7 +2204,7 @@
             }, [a("v-uni-image", {
                 staticClass: "swiper-image",
                 attrs: {
-                    src: "https://15nest.oss-cn-hangzhou.aliyuncs.com/img/ftts55.jpg",
+                    src: "static/b1.jpg",
                     mode: "aspectFill"
                 }
             })], 1), a("v-uni-swiper-item", {
@@ -2217,7 +2217,7 @@
             }, [a("v-uni-image", {
                 staticClass: "swiper-image",
                 attrs: {
-                    src: "https://15nest.oss-cn-hangzhou.aliyuncs.com/img/ftts22.jpg",
+                    src: "static/b2.jpg",
                     mode: "aspectFill"
                 }
             })], 1), a("v-uni-swiper-item", {
@@ -2230,7 +2230,7 @@
             }, [a("v-uni-image", {
                 staticClass: "swiper-image",
                 attrs: {
-                    src: "https://15nest.oss-cn-hangzhou.aliyuncs.com/img/ftts33.jpg",
+                    src: "static/b3.jpg",
                     mode: "aspectFill"
                 }
             })], 1)], 1)], 1), a("v-uni-view", {
