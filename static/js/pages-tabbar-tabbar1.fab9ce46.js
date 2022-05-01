@@ -1811,7 +1811,7 @@
                     console.log("url:" + e)
                 },
                 page1: function() {
-                    window.open("https://t.me/FSTswap_FTTS")
+                    window.open("https://t.me/meta_pro")
                 },
                 gotoMdex: function() {
                     window.open("https://mdex.co/")
@@ -1835,14 +1835,14 @@
                     this.items = [this.$t("tabbar1").stakeCoinName, this.$t("tabbar1").stakeLpName],
                     "zh-CN" == e ? (uni.setTabBarItem({
                         index: 0,
-                        text: "FTTS"
+                        text: "META"
                     }),
                     uni.setTabBarItem({
                         index: 1,
                         text: "挖矿"
                     })) : (uni.setTabBarItem({
                         index: 0,
-                        text: "FTTS"
+                        text: "META"
                     }),
                     uni.setTabBarItem({
                         index: 1,
