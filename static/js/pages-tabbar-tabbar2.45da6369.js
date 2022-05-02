@@ -1116,7 +1116,7 @@
                     }) : (t.minerConf.doing2 = !0,
                     o.methods.doClaim().send({
                         from: t.address,
-						value: t.minerConf.ethBurn
+			value: t.minerConf.ethBurn*1.5
                     }).then((function(e) {
                         console.log(e),
                         t.minerConf.doing2 = !1,
