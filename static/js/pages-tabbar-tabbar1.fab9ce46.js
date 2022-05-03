@@ -830,7 +830,7 @@
                     "font-size": "24rpx"
                 },
                 attrs: {
-                    href: "https://15nest.oss-cn-hangzhou.aliyuncs.com/paper/FTTSAudit.pdf",
+                    href: "https://github.com/Tech-Audit/Smart-Contract-Audits/blob/main/TECHAUDIT_META.pdf",
                     target: "_blank"
                 }
             }, [e._v("Audit")])], 1), t("v-uni-view", {
@@ -855,7 +855,7 @@
                     "font-size": "24rpx"
                 },
                 attrs: {
-                    href: "https://t.me/meta_pro",
+                    href: "https://twitter.com/METAcoincom",
                     target: "_blank"
                 }
             }, [e._v("Twitter")])], 1)], 1), t("v-uni-view", {}, [t("v-uni-image", {
