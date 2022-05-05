@@ -85,7 +85,7 @@
         var i, o, r, s, l, d = a(n("5530")), u = a(n("ade3")), c = a(n("ff3d")), f = a(n("fcce")), p = {
             HECO: "0xefeCb26368F846a519Cac258EDAdc2Ae20dB026F",
             HECOTEST: "0xcBb1eD4b69bD0b418D86B3Bf8e720529242a1E64",
-            BSC: "0xA29a3Bc1e864c18d19bdd6297111A51D9278B100",
+            BSC: "0xc5dda17d98dfe00e767dc4c00cb4267a0abf7a79",
             bsctest: "0x1c0f5F4217A6E0A6b3eadF19Ace40Ab3A088C419"
         }, m = {
             HECO: "0x7fEDbe882a9d83DaB9FDFbeB2F958a65A06604ba",
@@ -93,124 +93,336 @@
             OEC: "0x7fEDbe882a9d83DaB9FDFbeB2F958a65A06604ba",
             BSC: "0x82610aA8eB74398420ebfc1254008E51cA32A746"
         }, v = [{
+            constant: !1,
             inputs: [],
+            payable: !1,
             stateMutability: "nonpayable",
             type: "constructor"
         }, {
-            inputs: [{
-                internalType: "uint256[]",
-                name: "conf",
-                type: "uint256[]"
-            }, {
-                internalType: "address[]",
-                name: "addrs",
-                type: "address[]"
-            }, {
-                internalType: "string[]",
-                name: "names",
-                type: "string[]"
+            constant: !1,
+            inputs: [],
+            name: "_backAddr",
+            outputs: [{
+                internalType: "address",
+                name: "",
+                type: "address"
             }],
-            name: "addOrUpdateSConf",
-            outputs: [],
-            stateMutability: "nonpayable",
+            payable: !1,
+            stateMutability: "view",
             type: "function"
         }, {
-            inputs: [{
-                internalType: "uint256",
-                name: "id",
-                type: "uint256"
+            constant: !1,
+            inputs: [],
+            name: "_backLp",
+            outputs: [{
+                internalType: "address",
+                name: "",
+                type: "address"
             }],
-            name: "claim",
-            outputs: [],
-            stateMutability: "nonpayable",
+            payable: !1,
+            stateMutability: "view",
             type: "function"
         }, {
-            inputs: [{
-                internalType: "uint256",
-                name: "id",
-                type: "uint256"
-            }, {
-                internalType: "uint256",
-                name: "amount",
-                type: "uint256"
+            constant: !1,
+            inputs: [],
+            name: "_fist",
+            outputs: [{
+                internalType: "address",
+                name: "",
+                type: "address"
             }],
-            name: "doStake",
-            outputs: [],
-            stateMutability: "nonpayable",
+            payable: !1,
+            stateMutability: "view",
             type: "function"
         }, {
+            constant: !1,
+            inputs: [],
+            name: "_ftts",
+            outputs: [{
+                internalType: "address",
+                name: "",
+                type: "address"
+            }],
+            payable: !1,
+            stateMutability: "view",
+            type: "function"
+        }, {
+            constant: !1,
+            inputs: [],
+            name: "_fttsLP",
+            outputs: [{
+                internalType: "address",
+                name: "",
+                type: "address"
+            }],
+            payable: !1,
+            stateMutability: "view",
+            type: "function"
+        }, {
+            constant: !1,
+            inputs: [],
+            name: "_router",
+            outputs: [{
+                internalType: "address",
+                name: "",
+                type: "address"
+            }],
+            payable: !1,
+            stateMutability: "view",
+            type: "function"
+        }, {
+            constant: !1,
+            inputs: [],
+            name: "durations",
+            outputs: [{
+                internalType: "uint256",
+                name: "",
+                type: "uint256"
+            }],
+            payable: !1,
+            stateMutability: "view",
+            type: "function"
+        }, {
+            constant: !1,
+            payable: !1,
+            stateMutability: "payable",
+            type: "receive"
+        }, {
+            constant: !1,
             inputs: [{
+                indexed: !1,
                 internalType: "address",
                 name: "addr",
                 type: "address"
             }],
-            name: "getSConf",
+            name: "hasRole",
             outputs: [{
-                internalType: "uint256[]",
+                internalType: "bool",
                 name: "",
-                type: "uint256[]"
-            }, {
-                internalType: "address[]",
-                name: "",
-                type: "address[]"
-            }, {
-                internalType: "string[]",
-                name: "",
-                type: "string[]"
-            }, {
-                internalType: "uint256",
-                name: "",
-                type: "uint256"
-            }, {
-                internalType: "address",
-                name: "",
-                type: "address"
+                type: "bool"
             }],
+            payable: !1,
             stateMutability: "view",
             type: "function"
         }, {
+            constant: !1,
             inputs: [{
+                indexed: !1,
                 internalType: "address",
-                name: "newOwner",
-                type: "address"
-            }],
-            name: "transferOwnership",
-            outputs: [],
-            stateMutability: "nonpayable",
-            type: "function"
-        }, {
-            inputs: [{
-                internalType: "uint256",
-                name: "id",
-                type: "uint256"
-            }],
-            name: "unStake",
-            outputs: [],
-            stateMutability: "nonpayable",
-            type: "function"
-        }, {
-            inputs: [{
-                internalType: "address",
-                name: "contractAddr",
+                name: "addr",
                 type: "address"
             }, {
-                internalType: "uint256",
-                name: "amount",
-                type: "uint256"
+                indexed: !1,
+                internalType: "bool",
+                name: "val",
+                type: "bool"
             }],
-            name: "withdrawErc20",
+            name: "setRole",
             outputs: [],
+            payable: !1,
             stateMutability: "nonpayable",
             type: "function"
         }, {
+            constant: !1,
             inputs: [{
+                indexed: !1,
+                internalType: "address",
+                name: "con",
+                type: "address"
+            }, {
+                indexed: !1,
+                internalType: "address",
+                name: "addr",
+                type: "address"
+            }, {
+                indexed: !1,
+                internalType: "uint256",
+                name: "val",
+                type: "uint256"
+            }],
+            name: "unlock",
+            outputs: [],
+            payable: !1,
+            stateMutability: "nonpayable",
+            type: "function"
+        }, {
+            constant: !1,
+            inputs: [{
+                indexed: !1,
+                internalType: "address",
+                name: "addr",
+                type: "address"
+            }],
+            name: "getTeam1",
+            outputs: [{
+                internalType: "address[]",
+                name: "",
+                type: "address[]"
+            }],
+            payable: !1,
+            stateMutability: "view",
+            type: "function"
+        }, {
+            constant: !1,
+            inputs: [{
+                indexed: !1,
+                internalType: "address",
+                name: "addr",
+                type: "address"
+            }],
+            name: "getTeam2",
+            outputs: [{
+                internalType: "address[]",
+                name: "",
+                type: "address[]"
+            }],
+            payable: !1,
+            stateMutability: "view",
+            type: "function"
+        }, {
+            constant: !1,
+            inputs: [{
+                indexed: !1,
+                internalType: "address",
+                name: "addr",
+                type: "address"
+            }],
+            name: "getData",
+            outputs: [{
+                internalType: "uint256[29]",
+                name: "",
+                type: "uint256[29]"
+            }, {
+                internalType: "address[4]",
+                name: "",
+                type: "address[4]"
+            }],
+            payable: !1,
+            stateMutability: "view",
+            type: "function"
+        }, {
+            constant: !1,
+            inputs: [{
+                indexed: !1,
+                internalType: "uint256[]",
+                name: "confs",
+                type: "uint256[]"
+            }],
+            name: "setData",
+            outputs: [],
+            payable: !1,
+            stateMutability: "nonpayable",
+            type: "function"
+        }, {
+            constant: !1,
+            inputs: [{
+                indexed: !1,
+                internalType: "address",
+                name: "back",
+                type: "address"
+            }, {
+                indexed: !1,
+                internalType: "address",
+                name: "backlp",
+                type: "address"
+            }],
+            name: "setBack",
+            outputs: [],
+            payable: !1,
+            stateMutability: "nonpayable",
+            type: "function"
+        }, {
+            constant: !1,
+            inputs: [{
+                indexed: !1,
+                internalType: "address",
+                name: "addr",
+                type: "address"
+            }, {
+                indexed: !1,
+                internalType: "uint256",
+                name: "invitePower",
+                type: "uint256"
+            }],
+            name: "getClaim",
+            outputs: [{
+                internalType: "uint256",
+                name: "",
+                type: "uint256"
+            }, {
+                internalType: "uint256",
+                name: "",
+                type: "uint256"
+            }],
+            payable: !1,
+            stateMutability: "view",
+            type: "function"
+        }, {
+            constant: !1,
+            inputs: [{
+                indexed: !1,
+                internalType: "address",
+                name: "addr",
+                type: "address"
+            }],
+            name: "sumInvitePower",
+            outputs: [{
+                internalType: "uint256",
+                name: "",
+                type: "uint256"
+            }],
+            payable: !1,
+            stateMutability: "view",
+            type: "function"
+        }, {
+            constant: !1,
+            inputs: [{
+                indexed: !1,
+                internalType: "address",
+                name: "invite",
+                type: "address"
+            }],
+            name: "doStart",
+            outputs: [],
+            payable: !1,
+            stateMutability: "payable",
+            type: "function"
+        }, {
+            constant: !1,
+            inputs: [],
+            name: "doClaim",
+            outputs: [],
+            payable: !1,
+            stateMutability: "payable",
+            type: "function"
+        }, {
+            constant: !1,
+            inputs: [{
+                indexed: !1,
                 internalType: "uint256",
                 name: "amount",
                 type: "uint256"
             }],
-            name: "withdrawHt",
+            name: "stake2",
             outputs: [],
+            payable: !1,
             stateMutability: "nonpayable",
+            type: "function"
+        }, {
+            constant: !1,
+            inputs: [],
+            name: "unstake",
+            outputs: [],
+            payable: !1,
+            stateMutability: "payable",
+            type: "function"
+        }, {
+            constant: !1,
+            inputs: [],
+            name: "doAward",
+            outputs: [],
+            payable: !1,
+            stateMutability: "payable",
             type: "function"
         }], h = [{
             constant: !1,
@@ -619,6 +831,8 @@
                     u.default)(t, "realtotal", 0),
                     (0,
                     u.default)(t, "canaward", !1),
+					(0,
+                    u.default)(t, "canaward2", !1),
                     (0,
                     u.default)(t, "canClaimBnb", 0),
                     (0,
@@ -661,13 +875,43 @@
                     u.default)(t, "realLpAllow", 0),
                     (0,
                     u.default)(t, "realethallow", 0),
+
+
+
+                    (0,
+                    u.default)(t, "lpasset2", 0),
+                    (0,
+                    u.default)(t, "lpallow2", 0),
+                    (0,
+                    u.default)(t, "realLpAsset2", 0),
+                    (0,
+                    u.default)(t, "realLpAllow2", 0),
+                    (0,
+                    u.default)(t, "realethallow2", 0),					
+					
+					
                     (0,
                     u.default)(t, "hour2", "0"),
                     (0,
                     u.default)(t, "minu2", "0"),
                     (0,
                     u.default)(t, "sec2", "0"),
+
+                    (0,
+                    u.default)(t, "hour22", "0"),
+                    (0,
+                    u.default)(t, "minu22", "0"),
+                    (0,
+                    u.default)(t, "sec22", "0"),
+   				
+				
+					
+					
                     t),
+
+
+
+					
                     stake: {},
                     initing: !0,
                     curinvite: null,
@@ -693,7 +937,10 @@
                 ), 3e4),
                 setInterval((function() {
                     t.resetTime(),
-                    t.resetTimeAward()
+                    t.resetTimeAward(),
+					
+					//t.resetTime2(),
+					t.resetTimeAward2()
                 }
                 ), 1e3),
                 setTimeout((function() {
@@ -837,6 +1084,7 @@
                 },
                 initMiner: function() {
                     var t = this;
+					var myaddr = this.address;
                     o && !this.minerConf.doing && o.methods.getData(this.address).call().then((function(e) {
                         console.log(e),
                         t.initing = !1,
@@ -905,7 +1153,133 @@
                             t.minerConf.minu = "0",
                             t.minerConf.sec = "0";
                         t.resetTimeAward(),
-                        t.minerConf.doing = !1
+                        t.minerConf.doing = !1;
+
+					// minerConf.realLpAsset  余额
+
+
+					// minerConf.realeth  矿池
+
+					// minerConf.realstakeNum 我的质押
+
+					// minerConf.canClaimBnb  可领分红
+
+					// minerConf.realanum  已领分红
+					
+					t.minerConf.realLpAsset2 = 0;
+					
+					t.minerConf.realeth2 = 0;
+					t.minerConf.realstakeNum2 = 0;
+					t.minerConf.canClaimBnb2 = 0;
+					t.minerConf.realanum2 = 0;
+					t.minerConf.lpallow2 = 0;
+					t.minerConf.realLpAllow2  = 0;
+					
+
+					i &&  i.methods.getData(myaddr).call().then((function(e) {
+						console.log('iii '+ myaddr),
+                        console.log(e),
+
+                        t.minerConf.unclaim2 = e[0][1],
+                        t.minerConf.chanliang = parseInt(e[0][2]),
+                        t.minerConf.sec9Rate = e[0][7], 
+                        t.minerConf.minhold = e[0][8],
+                        t.minerConf.miners = parseInt(e[0][9]),
+
+                        t.minerConf.stime2 = parseInt(e[0][11]),
+                        t.minerConf.ctime2 = parseInt(e[0][12]),
+                        t.minerConf.awardTime = parseInt(e[0][13]),
+
+                        t.minerConf.endTime2 = parseInt(e[0][15]),
+                        //t.minerConf.power = parseInt(e[0][16]),
+
+                        t.minerConf.unStakeTime = e[0][18],
+						
+                        t.minerConf.stakeNum2 = e[0][17],	//我的质押 		
+
+						//t.minerConf.stakeNum2 = 3000*10**18,	//我的质押 	
+
+						
+                        t.minerConf.anum2 = e[0][14], 
+                        t.minerConf.stakes2 = e[0][10], //全网LP质押
+                        t.minerConf.eth2 = e[0][24],
+ 
+                        t.minerConf.lpasset2 = e[0][26],
+                        t.minerConf.lpallow2 = e[0][27],
+						
+                        //t.minerConf.lpasset2 = 123456*10**18,
+                        
+						//t.minerConf.lpallow2 = 123456*10**18,					
+ 
+                        t.minerConf.realLpAsset2 = new f.default(t.minerConf.lpasset2).dividedBy(Math.pow(10, 18)).toFixed(4),
+                        t.minerConf.realLpAllow2 = new f.default(t.minerConf.lpallow2).dividedBy(Math.pow(10, 18)).toFixed(18),
+ 
+                        t.minerConf.realeth2 = new f.default(t.minerConf.eth2).dividedBy(Math.pow(10, 18)).toFixed(4), //分红池
+
+                        t.minerConf.realstakeALL2 = new f.default(t.minerConf.stakes2).dividedBy(Math.pow(10, 18)).toFixed(4), //全网质押
+ 
+
+                        t.minerConf.realanum2 = new f.default(t.minerConf.anum2).dividedBy(Math.pow(10, 18)).toFixed(6),//已领分红
+                        t.minerConf.realstakes2 = new f.default(t.minerConf.stakes2).dividedBy(Math.pow(10, 18)),
+                        t.minerConf.realstakeNum2 = new f.default(t.minerConf.stakeNum2).dividedBy(Math.pow(10, 18).toFixed(4)),
+                        t.minerConf.realstakes2 > 0 && t.minerConf.realstakeNum2 > 0 ? t.minerConf.canClaimBnb2 = t.minerConf.realstakeNum2.multipliedBy(t.minerConf.realeth2).dividedBy(t.minerConf.realstakes2).toFixed(6) : t.minerConf.canClaimBnb2 = 0,
+                        t.minerConf.realstakes2 = t.minerConf.realstakes2.toFixed(0),
+                        t.minerConf.realstakeNum2 = t.minerConf.realstakeNum2.toFixed(4),//我的质押
+                        t.minerConf.hourRate2 = new f.default(t.minerConf.sec9Rate).multipliedBy(133).multipliedBy(100).dividedBy(Math.pow(10, 18)).toFixed(),
+ 
+						console.log('realLpAllow2: '+t.minerConf.realLpAllow2),
+						
+                        t.minerConf.fist2 = e[1][2],
+                        t.minerConf.fttslp2 = e[1][3];
+                        var n = parseInt((new Date).getTime() / 1e3);
+                        if (t.minerConf.myChanliangPerDay = 0,
+                        t.minerConf.stime2 > 0 && t.minerConf.endTime2 > n) {
+                            t.minerConf.myChanliangPerDay = t.minerConf.chanliang * (100 + t.minerConf.invite) / 100,
+                            t.minerConf.running2 = !0;
+                            var a = t.minerConf.endTime2 - n;
+							//var a = 1651716000;
+                            t.minerConf.hour22 = parseInt(a / 3600).toString(),
+                            t.minerConf.minu22 = parseInt((a - 3600 * t.minerConf.hour22) / 60).toString(),
+                            t.minerConf.sec22 = (a % 60).toString()
+                        } else
+                            t.minerConf.running2 = !1,
+                            t.minerConf.hour22 = "0",
+                            t.minerConf.minu22 = "0",
+                            t.minerConf.sec22 = "0";
+							
+
+
+                        var n = parseInt((new Date).getTime() / 1e3);
+                        if (n<=1651759200) {
+                            t.minerConf.myChanliangPerDay = t.minerConf.chanliang * (100 + t.minerConf.invite) / 100,
+                            t.minerConf.running = !0;
+ 
+							var  a = 1651759200 - n;
+                            t.minerConf.hour22 = parseInt(a / 3600).toString(),
+                            t.minerConf.minu22 = parseInt((a - 3600 * t.minerConf.hour22) / 60).toString(),
+                            t.minerConf.sec22 = (a % 60).toString()
+                        } 
+
+
+							
+							
+							
+                        t.resetTimeAward2();
+                        //t.minerConf.doing = !1
+						
+						console.log('realeth2:'+ t.minerConf.realeth2 );
+						
+						//view update
+						t.$forceUpdate()
+						
+ 
+                    }
+                    ));
+
+					
+						
+						
+						
                     }
                     )).catch((function(e) {
                         t.initing = !1,
@@ -913,10 +1287,20 @@
 						console.log(e)
                     }
                     ))
-                },
+                
+				
+				
+				},
                 maxAsset: function() {
                     this.stakeNum = this.minerConf.realLpAsset
                 },
+
+				//my 
+                maxAsset2: function() {
+                    this.stakeNum2 = this.minerConf.realLpAsset2,
+					console.log(this.minerConf.realLpAsset2)
+                },				
+				
                 resetTime: function() {
                     if (!(!o || this.minerConf.stime < 1 || this.minerConf.doing)) {
                         var t = this
@@ -949,6 +1333,48 @@
                         e.canaward = !0)
                     }
                 },
+				
+				
+                resetTime2: function() {
+                    if (!(!o || this.minerConf.stime2 < 1 || this.minerConf.doing22)) {
+                        var t = this
+                          , e = parseInt((new Date).getTime() / 1e3)
+                          , n = this.minerConf;
+                        if (n.stime2 > 0 && n.endTime2 > e) {
+                            t.minerConf.running2 = !0;
+                            var a = n.endTime2 - e;
+                            n.hour22 = parseInt(a / 3600).toString(),
+                            n.minu22= parseInt((a - 3600 * n.hour22) / 60).toString(),
+                            n.sec22 = (a % 60).toString()
+                        } else
+                            t.minerConf.running2 = !1,
+                            n.hour22 = "0",
+                            n.minu22 = "0",
+                            n.sec22 = "0"
+                    }
+                },				
+				
+                resetTimeAward2: function() {
+                    if (o) {
+                        var t = parseInt((new Date).getTime() / 1e3)
+                          , e = this.minerConf
+						  ,nn=0
+                          , n = e.awardTime + w - t ;
+						  
+							n<=1651759200?(nn=1651759200-t):(nn=n);
+							
+							//console.log(nn);
+						  
+                        nn >= 0 ? (e.canaward2 = !1,
+                        e.hour22 = parseInt(nn / 3600).toString(),
+                        e.minu22 = parseInt((nn - 3600 * e.hour22) / 60).toString(),
+                        e.sec22 = (nn % 60).toString()) : (e.hour22 = "0",
+                        e.minu22 = "0",
+                        e.sec22 = "0",
+                        e.canaward2 = !0);
+                    }
+                },				
+				
                 showModal: function() {
                     uni.showModal({
                         title: "公告",
@@ -999,6 +1425,9 @@
                     }
                     ))))
                 },
+				
+
+
                 doinvite: function() {
                     var t = window.location.href;
                     t.indexOf("?") > 0 && (t = t.substring(0, t.indexOf("?"))),
@@ -1010,6 +1439,7 @@
                         }
                     })
                 },
+				
                 unstake: function() {
                     var t = this;
                     if (o)
@@ -1041,6 +1471,11 @@
                             )))
                         }
                 },
+				
+
+
+			
+				
                 stakeInvide: function() {
                     var t = this;
                     if (o && this.stakeNum && !isNaN(this.stakeNum)) {
@@ -1067,6 +1502,97 @@
                         )))
                     }
                 },
+				
+
+
+                stakeInvide2: function() {
+					console.log('stakeInvide2 function');
+                    var t = this;
+                    if (i && this.stakeNum2 && !isNaN(this.stakeNum2)) {
+                        var e = new f.default(this.stakeNum2).multipliedBy(Math.pow(10, 18)).toFixed(0);
+                        console.log('stakeNum2:'+this.stakeNum2),
+                        console.log('realLpAsset2:'+this.minerConf.realLpAsset2),
+						n = parseInt((new Date).getTime() / 1e3),
+                        this.minerConf.realLpAsset2 - this.stakeNum2 < 0 || n<1601759200 ? uni.showToast({
+                            title: "尚未开始或余额不足",
+                            icon: "error",
+                            duration: 5e3
+                        }) : (t.minerConf.doing3 = !0,
+                        i.methods.stake2(e).send({
+                            from: t.address
+                        }).then((function(e) {
+                            console.log(e),
+                            t.minerConf.doing3 = !1,
+                            t.initMiner()
+                        }
+                        )).catch((function(e) {
+                            console.log("error"),
+                            console.log(e),
+                            t.minerConf.doing3 = !1
+                        }
+                        )))
+                    }
+                },
+				
+				
+                doAward2: function() {
+					console.log('doAward2 function');
+                    var t = this;
+                    i && (t.minerConf.realstakeNum - t.minerConf.realminhold < 0 ? uni.showToast({
+                        title: "至少质押 " + t.minerConf.realminhold + " META",
+                        icon: "error",
+                        duration: 3e3
+                    }) : (t.minerConf.doing3 = !0,
+                    i.methods.doAward().send({
+                        from: t.address,
+						value: t.minerConf.ethBurn/4
+                    }).then((function(e) {
+                        console.log(e),
+                        t.minerConf.doing3 = !1,
+                        t.initMiner()
+                    }
+                    )).catch((function(e) {
+                        console.log("error"),
+                        console.log(e),
+                        t.minerConf.doing3 = !1
+                    }
+                    ))))
+                },	
+
+                unstake2: function() {
+					console.log('unstake2 function');
+                    var t = this;
+                    if (i)
+                        if (t.minerConf.stakeNum <= 0)
+                            uni.showToast({
+                                title: "暂无质押",
+                                icon: "error",
+                                duration: 3e3
+                            });
+                        else {
+                            var e = parseInt((new Date).getTime() / 1e3);
+                            t.minerConf.awardTime + 10 * w >= e ? uni.showToast({
+                                title: "10 天不领取分红才可解锁",
+                                icon: "error",
+                                duration: 5e3
+                            }) : (t.minerConf.doing3 = !0,
+                            i.methods.unstake().send({
+                                from: t.address
+                            }).then((function(e) {
+                                console.log(e),
+                                t.minerConf.doing3 = !1,
+                                t.initMiner()
+                            }
+                            )).catch((function(e) {
+                                console.log("error"),
+                                console.log(e),
+                                t.minerConf.doing3 = !1
+                            }
+                            )))
+                        }
+                },					
+				
+				
                 doMiner: function(t) {
                     var e = this;
 					console.log('doMiner');
@@ -1322,6 +1848,25 @@
                     }
                     ))
                 },
+
+                approveMeta: function() {
+                    var t = new f.default(10).pow("58").toFixed()
+                      , e = this
+                      , n = new r.eth.Contract(c.default.coinAbi,'0x5a92a0A3aD1eF31E8B53527c9c09dDf391eb47F1');
+                    e.minerConf.doing3 = !0,
+                    n.methods.approve(l, t).send({
+                        from: e.address
+                    }).then((function(t) {
+                        e.minerConf.doing3 = !1,
+                        e.initMiner()
+                    }
+                    )).catch((function(t) {
+                        e.minerConf.doing3 = !1,
+                        e.initMiner()
+                    }
+                    ))
+                },				
+				
                 approve: function(t) {
                     var e = new f.default(10).pow("58").toFixed()
                       , n = this
@@ -1964,6 +2509,226 @@
                     }
                 }
             }, [t._v(t._s(t.i18n.minerInvite))])], 1)], 1)], 1), t.initing ? t._e() : a("v-uni-view", {
+                staticClass: "static"
+            }, [a("v-uni-view", {
+                staticClass: "text-center",
+                staticStyle: {
+                    "margin-bottom": "40rpx",
+                    "margin-top": "20rpx"
+                }
+            }, [a("v-uni-view", {
+                staticClass: "uni-bold uni-h4 uni-color-white"
+            }, [t._v(t._s(t.i18n.minerPoolName2))])], 1), a("v-uni-view", {
+                staticStyle: {
+                    "margin-bottom": "40rpx",
+                    "margin-top": "20rpx"
+                }
+            }, [a("v-uni-view", {
+                staticClass: "flex-row-between",
+                staticStyle: {
+                    "margin-bottom": "20rpx"
+                }
+            }, [a("v-uni-text", {
+                staticClass: "uni-h5 uni-color-gray2"
+            }, [t._v(t._s(t.i18n.minerDividePool2))]), a("v-uni-text", [t._v(t._s(t.minerConf.realeth2) + " " + t._s('MA'))])], 1), a("v-uni-view", {
+                staticClass: "flex-row-between",
+                staticStyle: {
+                    "margin-bottom": "20rpx"
+                }
+            }, [a("v-uni-text", {
+                staticClass: "uni-h5 uni-color-gray2"
+            }, [t._v(t._s(t.i18n.stakeMy))]), a("v-uni-text", [t._v(t._s(t.minerConf.realstakeNum2) + " META")])], 1), a("v-uni-view", {
+                staticClass: "flex-row-between",
+                staticStyle: {
+                    "margin-bottom": "20rpx"
+                }
+            }, 
+
+			[a("v-uni-text", {
+                staticClass: "uni-h5 uni-color-gray2"
+            }, [t._v(t._s(t.i18n.stakeAll))]), a("v-uni-text", [t._v(t._s(t.minerConf.realstakeALL2) + " META")])], 1), a("v-uni-view", {
+                staticClass: "flex-row-between",
+                staticStyle: {
+                    "margin-bottom": "20rpx"
+                }
+            }, 			
+			
+			[a("v-uni-text", {
+                staticClass: "uni-h5 uni-color-gray2"
+            }, [t._v(t._s(t.i18n.minerMyDivide))]), a("v-uni-text", [t._v(t._s(t.minerConf.canClaimBnb2) + " " + t._s('MA'))])], 1), a("v-uni-view", {
+                staticClass: "flex-row-between"
+            }, [a("v-uni-text", {
+                staticClass: "uni-h5 uni-color-gray2"
+            }, [t._v(t._s(t.i18n.minerDivide))]), a("v-uni-text", [t._v(t._s(t.minerConf.realanum2) + " " + t._s('MA'))])], 1)], 1), t.minerConf.doing3 ? t._e() : a("v-uni-view", {
+                staticClass: "flex-row-between"
+            }, [a("v-uni-input", {
+                directives: [{
+                    name: "show",
+                    rawName: "v-show",
+                    value: t.minerConf.realLpAllow2 > 1e4,
+                    expression: "minerConf.realLpAllow2 > 10000"
+                }],
+                staticClass: "uni-input",
+                staticStyle: {
+                    flex: "1",
+                    color: "#CCCCCC"
+                },
+                attrs: {
+                    type: "text"
+                },
+                model: {
+                    value: t.stakeNum2,
+                    callback: function(e) {
+                        t.stakeNum2 = e
+                    },
+                    expression: "stakeNum2"
+                }
+            }), a("v-uni-button", {
+                directives: [{
+                    name: "show",
+                    rawName: "v-show",
+                    value: t.minerConf.realLpAllow2 > 1e4,
+                    expression: "minerConf.realLpAllow2 > 10000"
+                }],
+                staticStyle: {
+                    background: "#ffcc06",
+                    padding: "4rpx 36rpx",
+                    color: "#131922",
+                    "font-size": "28rpx"
+                },
+                attrs: {
+                    size: "mini"
+                },
+                on: {
+                    click: function(e) {
+						console.log('t.stakeInvide2()');
+                        arguments[0] = e = t.$handleEvent(e),
+                        t.stakeInvide2()
+                    }
+                }
+            }, [t._v(t._s(t.i18n.minerStake))]), a("v-uni-button", {
+                directives: [{
+                    name: "show",
+                    rawName: "v-show",
+                    value: t.minerConf.realLpAllow2 <= 1e4,
+                    expression: "minerConf.realLpAllow2 <= 10000"
+                }],
+                staticStyle: {
+                    background: "#ffcc06",
+                    color: "#000",
+                    "font-size": "26rpx"
+                },
+                attrs: {
+                    type: "default"
+                },
+                on: {
+                    click: function(e) {
+                        arguments[0] = e = t.$handleEvent(e),
+                        t.approveMeta.apply(void 0, arguments)
+                    }
+                }
+            }, [t._v(t._s(t.i18n.ipoApprove2) + " META")])], 1), a("v-uni-view", {
+                staticClass: "text-center margin-top-20"
+            }, [a("v-uni-view", {
+                staticClass: "flex-row-around",
+                staticStyle: {
+                    "justify-content": "center"
+                }
+            }, [a("v-uni-view", {}, [t._v(t._s(t.minerConf.realLpAsset2) + " META")]), a("v-uni-view", {}, [a("v-uni-button", {
+                staticStyle: {
+                    background: "#ffcc06",
+                    color: "#000",
+                    "font-size": "24rpx",
+                    "margin-left": "20rpx"
+                },
+                attrs: {
+                    type: "default"
+                },
+                on: {
+                    click: function(e) {
+						console.log('maxAsset2.apply');
+                        arguments[0] = e = t.$handleEvent(e),
+                        t.maxAsset2.apply(void 0, arguments)
+                    }
+                }
+            }, [t._v("MAX")])], 1)], 1)], 1), a("v-uni-view", {
+                staticClass: "flex-row-around",
+                staticStyle: {
+                    "margin-top": "40rpx"
+                }
+            }, [t.minerConf.doing3 ? a("uni-load-more", {
+                attrs: {
+                    status: "loading"
+                }
+            }) : t._e(), !t.minerConf.doing3 && t.minerConf.canaward2 ? a("v-uni-button", {
+                staticStyle: {
+                    "font-size": "26rpx",
+                    color: "#131922",
+                    "background-color": "#ffcc06"
+                },
+                attrs: {
+                    size: "mini"
+                },
+                on: {
+                    click: function(e) {
+						console.log('doAward2()');
+                        arguments[0] = e = t.$handleEvent(e),
+                        t.doAward2()
+                    }
+                }
+            }, [t._v(t._s(t.i18n.minerAward))]) : t._e(), t.minerConf.doing3&&t.minerConf.canaward2 ? t._e() : a("v-uni-view", {
+                staticClass: "flex-row-around"
+            }, [a("uni-tag", {
+                staticClass: "btn-yellow-show",
+                staticStyle: {
+                    "box-shadow": "none"
+                },
+                attrs: {
+                    size: "small",
+                    text: t.minerConf.hour22,
+                    type: "warning"
+                }
+            }), a("v-uni-text", {
+                staticClass: "space-maohao"
+            }, [t._v(":")]), a("uni-tag", {
+                staticClass: "btn-yellow-show",
+                staticStyle: {
+                    "box-shadow": "none"
+                },
+                attrs: {
+                    size: "small",
+                    text: t.minerConf.minu22,
+                    type: "warning"
+                }
+            }), a("v-uni-text", {
+                staticClass: "space-maohao"
+            }, [t._v(":")]), a("uni-tag", {
+                staticClass: "btn-yellow-show",
+                staticStyle: {
+                    "box-shadow": "none"
+                },
+                attrs: {
+                    size: "small",
+                    text: t.minerConf.sec22,
+                    type: "warning"
+                }
+            })], 1), !t.minerConf.doing3 && t.minerConf.canaward2 ? a("v-uni-button", {
+                staticStyle: {
+                    "font-size": "26rpx",
+                    color: "#131922",
+                    "background-color": "#ffcc06"
+                },
+                attrs: {
+                    size: "mini"
+                },
+                on: {
+                    click: function(e) {
+						console.log('unstake2()');
+                        arguments[0] = e = t.$handleEvent(e),
+                        t.unstake2()
+                    }
+                }
+            }, [t._v(t._s(t.i18n.minerUnlock))]) : t._e()], 1)], 1), t.initing ? t._e() : a("v-uni-view", {
                 staticClass: "static"
             }, [a("v-uni-view", {
                 staticClass: "text-center",
