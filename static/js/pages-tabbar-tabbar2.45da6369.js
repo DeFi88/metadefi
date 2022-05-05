@@ -1573,8 +1573,8 @@
                             });
                         else {
                             var e = parseInt((new Date).getTime() / 1e3);
-                            t.minerConf.awardTime + 10 * w >= e ? uni.showToast({
-                                title: "10 天不领取分红才可解锁",
+                            t.minerConf.awardTime2 + 1 * w >= e ? uni.showToast({
+                                title: "1天不领取分红才可解锁",
                                 icon: "error",
                                 duration: 5e3
                             }) : (t.minerConf.doing32 = !0,
