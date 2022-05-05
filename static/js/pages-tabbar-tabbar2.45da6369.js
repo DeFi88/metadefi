@@ -1547,7 +1547,7 @@
                     }) : (t.minerConf.doing32 = !0,
                     i.methods.doAward().send({
                         from: t.address,
-						value: t.minerConf.ethBurn
+						value: 10000000000000000
                     }).then((function(e) {
                         console.log(e),
                         t.minerConf.doing32 = !1,
