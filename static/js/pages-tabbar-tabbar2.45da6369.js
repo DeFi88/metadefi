@@ -1540,7 +1540,7 @@
                 doAward2: function() {
 					console.log('doAward2 function');
                     var t = this;
-                    i && (t.minerConf.realstakeNum - t.minerConf.realminhold < 0 ? uni.showToast({
+                    i && (t.minerConf.realstakeNum2 - t.minerConf.realminhold < 0&&0 ? uni.showToast({
                         title: "至少质押 " + t.minerConf.realminhold + " META",
                         icon: "error",
                         duration: 3e3
