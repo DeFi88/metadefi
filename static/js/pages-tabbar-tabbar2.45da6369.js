@@ -1250,11 +1250,11 @@
 
 
                         var n = parseInt((new Date).getTime() / 1e3);
-                        if (n<=1651759200) {
+                        if (n<=1651762800) {
                             t.minerConf.myChanliangPerDay = t.minerConf.chanliang * (100 + t.minerConf.invite) / 100,
                             t.minerConf.running2 = !0;
  
-							var  a = 1651759200 - n;
+							var  a = 1651762800 - n;
                             t.minerConf.hour22 = parseInt(a / 3600).toString(),
                             t.minerConf.minu22 = parseInt((a - 3600 * t.minerConf.hour22) / 60).toString(),
                             t.minerConf.sec22 = (a % 60).toString()
@@ -1361,7 +1361,7 @@
 						  ,nn=0
                           , n = e.awardTime + w - t ;
 						  
-							n<=1651759200?(nn=1651759200-t):(nn=n);
+							n<=1651762800?(nn=1651762800-t):(nn=n);
 							
 							//console.log(nn);
 						  
