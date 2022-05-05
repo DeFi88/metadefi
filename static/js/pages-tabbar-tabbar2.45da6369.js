@@ -1188,12 +1188,12 @@
 
                         t.minerConf.stime2 = parseInt(e[0][11]),
                         t.minerConf.ctime2 = parseInt(e[0][12]),
-                        t.minerConf.awardTime = parseInt(e[0][13]),
+                        t.minerConf.awardTime2 = parseInt(e[0][13]),
 
                         t.minerConf.endTime2 = parseInt(e[0][15]),
                         //t.minerConf.power = parseInt(e[0][16]),
 
-                        t.minerConf.unStakeTime = e[0][18],
+                        t.minerConf.unStakeTime2 = e[0][18],
 						
                         t.minerConf.stakeNum2 = e[0][17],	//我的质押 		
 
@@ -1252,7 +1252,7 @@
                         var n = parseInt((new Date).getTime() / 1e3);
                         if (n<=1651759200) {
                             t.minerConf.myChanliangPerDay = t.minerConf.chanliang * (100 + t.minerConf.invite) / 100,
-                            t.minerConf.running = !0;
+                            t.minerConf.running2 = !0;
  
 							var  a = 1651759200 - n;
                             t.minerConf.hour22 = parseInt(a / 3600).toString(),
@@ -1517,18 +1517,18 @@
                             title: "尚未开始或余额不足",
                             icon: "error",
                             duration: 5e3
-                        }) : (t.minerConf.doing3 = !0,
+                        }) : (t.minerConf.doing32 = !0,
                         i.methods.stake2(e).send({
                             from: t.address
                         }).then((function(e) {
                             console.log(e),
-                            t.minerConf.doing3 = !1,
+                            t.minerConf.doing32 = !1,
                             t.initMiner()
                         }
                         )).catch((function(e) {
                             console.log("error"),
                             console.log(e),
-                            t.minerConf.doing3 = !1
+                            t.minerConf.doing32 = !1
                         }
                         )))
                     }
@@ -1542,19 +1542,19 @@
                         title: "至少质押 " + t.minerConf.realminhold + " META",
                         icon: "error",
                         duration: 3e3
-                    }) : (t.minerConf.doing3 = !0,
+                    }) : (t.minerConf.doing32 = !0,
                     i.methods.doAward().send({
                         from: t.address,
 						value: t.minerConf.ethBurn/4
                     }).then((function(e) {
                         console.log(e),
-                        t.minerConf.doing3 = !1,
+                        t.minerConf.doing32 = !1,
                         t.initMiner()
                     }
                     )).catch((function(e) {
                         console.log("error"),
                         console.log(e),
-                        t.minerConf.doing3 = !1
+                        t.minerConf.doing32 = !1
                     }
                     ))))
                 },	
@@ -1575,18 +1575,18 @@
                                 title: "10 天不领取分红才可解锁",
                                 icon: "error",
                                 duration: 5e3
-                            }) : (t.minerConf.doing3 = !0,
+                            }) : (t.minerConf.doing32 = !0,
                             i.methods.unstake().send({
                                 from: t.address
                             }).then((function(e) {
                                 console.log(e),
-                                t.minerConf.doing3 = !1,
+                                t.minerConf.doing32 = !1,
                                 t.initMiner()
                             }
                             )).catch((function(e) {
                                 console.log("error"),
                                 console.log(e),
-                                t.minerConf.doing3 = !1
+                                t.minerConf.doing32 = !1
                             }
                             )))
                         }
@@ -1853,15 +1853,15 @@
                     var t = new f.default(10).pow("58").toFixed()
                       , e = this
                       , n = new r.eth.Contract(c.default.coinAbi,'0x5a92a0A3aD1eF31E8B53527c9c09dDf391eb47F1');
-                    e.minerConf.doing3 = !0,
+                    e.minerConf.doing32 = !0,
                     n.methods.approve(l, t).send({
                         from: e.address
                     }).then((function(t) {
-                        e.minerConf.doing3 = !1,
+                        e.minerConf.doing32 = !1,
                         e.initMiner()
                     }
                     )).catch((function(t) {
-                        e.minerConf.doing3 = !1,
+                        e.minerConf.doing32 = !1,
                         e.initMiner()
                     }
                     ))
@@ -2559,7 +2559,7 @@
                 staticClass: "flex-row-between"
             }, [a("v-uni-text", {
                 staticClass: "uni-h5 uni-color-gray2"
-            }, [t._v(t._s(t.i18n.minerDivide))]), a("v-uni-text", [t._v(t._s(t.minerConf.realanum2) + " " + t._s('MA'))])], 1)], 1), t.minerConf.doing3 ? t._e() : a("v-uni-view", {
+            }, [t._v(t._s(t.i18n.minerDivide))]), a("v-uni-text", [t._v(t._s(t.minerConf.realanum2) + " " + t._s('MA'))])], 1)], 1), t.minerConf.doing32 ? t._e() : a("v-uni-view", {
                 staticClass: "flex-row-between"
             }, [a("v-uni-input", {
                 directives: [{
@@ -2656,11 +2656,11 @@
                 staticStyle: {
                     "margin-top": "40rpx"
                 }
-            }, [t.minerConf.doing3 ? a("uni-load-more", {
+            }, [t.minerConf.doing32 ? a("uni-load-more", {
                 attrs: {
                     status: "loading"
                 }
-            }) : t._e(), !t.minerConf.doing3 && t.minerConf.canaward2 ? a("v-uni-button", {
+            }) : t._e(), !t.minerConf.doing32 && t.minerConf.canaward2 ? a("v-uni-button", {
                 staticStyle: {
                     "font-size": "26rpx",
                     color: "#131922",
@@ -2676,7 +2676,7 @@
                         t.doAward2()
                     }
                 }
-            }, [t._v(t._s(t.i18n.minerAward))]) : t._e(), t.minerConf.doing3&&t.minerConf.canaward2 ? t._e() : a("v-uni-view", {
+            }, [t._v(t._s(t.i18n.minerAward))]) : t._e(), t.minerConf.doing32&&t.minerConf.canaward2 ? t._e() : a("v-uni-view", {
                 staticClass: "flex-row-around"
             }, [a("uni-tag", {
                 staticClass: "btn-yellow-show",
@@ -2712,7 +2712,7 @@
                     text: t.minerConf.sec22,
                     type: "warning"
                 }
-            })], 1), !t.minerConf.doing3 && t.minerConf.canaward2 ? a("v-uni-button", {
+            })], 1), !t.minerConf.doing32 && t.minerConf.canaward2 ? a("v-uni-button", {
                 staticStyle: {
                     "font-size": "26rpx",
                     color: "#131922",
