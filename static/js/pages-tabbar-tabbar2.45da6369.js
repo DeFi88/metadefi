@@ -1361,9 +1361,10 @@
                         var t = parseInt((new Date).getTime() / 1e3)
                           , e = this.minerConf
 						  ,nn=0
-                          , n = e.awardTime + w - t ;
+                          , nn = e.awardTime2 + w - t ;
 						  
-							n<=1651762800?(nn=1651762800-t):(nn=n);
+							//n<=1651762800?(nn=1651762800-t):(nn=n);
+							//console.log();
 							
 							//console.log(nn);
 						  
