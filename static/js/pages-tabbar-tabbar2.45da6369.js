@@ -1566,7 +1566,7 @@
 					console.log('unstake2 function');
                     var t = this;
                     if (i)
-                        if (t.minerConf.stakeNum <= 0)
+                        if (t.minerConf.stakeNum2 <= 0)
                             uni.showToast({
                                 title: "暂无质押",
                                 icon: "error",
