@@ -1382,7 +1382,7 @@
                     uni.showModal({
                         title: "公告",
                         showCancel: !1,
-                        content: "温馨提醒：LP已经可以解除质押 。\r\nMeta上线当天即爆火，相继登录TP钱包热搜前3，MSG交易量排行榜前8，AVE热搜排行榜前10。\r\n1.META已通过安全审计，100%安全\r\n2.今晚9点开启第二轮 质押META，挖MA（MA为MASWAP交易所代币） \r\n3.已开启合伙人双重分红  3-5天回本 利润持久 详情电报咨询 @meta_pro\r\n4.预计5.12-15日上线MASWAP交易所，我们会不断通过游戏和应用赋能，让META不断升值。感谢大家支持，你不卖  我不卖 一起步道涨涨涨！拿住10U见",
+                        content: "温馨提醒：LP已经可以解除质押，官方将于5.10日将官方添加的LP锁定，未来我们会继续完善生态，不断为META赋能。\r\nMeta上线当天即爆火，相继登录TP钱包热搜前3，MSG交易量排行榜前8，AVE热搜排行榜前10。\r\n1.META已通过安全审计，100%安全\r\n2.今晚9点开启第二轮 质押META，挖MA（MA为MASWAP交易所代币） \r\n3.已开启合伙人双重分红  3-5天回本 利润持久 详情电报咨询 @meta_pro\r\n4.预计5.12-15日上线MASWAP交易所，我们会不断通过游戏和应用赋能，让META不断升值。感谢大家支持，你不卖  我不卖 一起步道涨涨涨！拿住10U见",
                         success: function(t) {
 			    		
                             t.confirm && console.log("用户点击确定") && window.open("https://t.me/meta_pro")
